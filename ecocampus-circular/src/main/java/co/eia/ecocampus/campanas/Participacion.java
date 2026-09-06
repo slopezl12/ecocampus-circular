@@ -3,7 +3,7 @@ package co.eia.ecocampus.campanas;
 import co.eia.ecocampus.personas.Persona;
 import java.time.LocalDate;
 
-// Clase asociativa: no es una entidad del dominio, es el vinculo Persona <-> CampanaAmbiental
+//
 public class Participacion {
     private final Persona persona;
     private final CampanaAmbiental campana;

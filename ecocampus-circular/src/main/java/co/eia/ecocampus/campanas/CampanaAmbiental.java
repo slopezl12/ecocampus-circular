@@ -38,7 +38,7 @@ public class CampanaAmbiental implements Cerrable, Identificable {
     public LocalDate getFechaFin() { return fechaFin; }
     public int getCupo() { return cupo; }
 
-    // Composicion: las actividades dependen del ciclo de vida de la campana (requisito 8)
+    //(requisito 8)
     public void agregarActividad(Actividad actividad) {
         if (estaCerrado()) {
             throw new IllegalStateException("Una campana cerrada no admite nuevas actividades");
@@ -55,7 +55,7 @@ public class CampanaAmbiental implements Cerrable, Identificable {
         return copia;
     }
 
-    // Regla de negocio 5: una persona no puede inscribirse dos veces en la misma campana
+    // Regla de negocio 5
     public void inscribir(Persona persona, LocalDate fechaInscripcion) {
         if (estaCerrado()) {
             throw new IllegalStateException("Una campana cerrada no admite nuevas inscripciones");

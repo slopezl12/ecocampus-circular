@@ -28,7 +28,7 @@ public class PuntoEcologico implements Identificable {
     public int getCapacidad() { return capacidad; }
     public String getCategoriasAceptadas() { return categoriasAceptadas; }
 
-    // Regla de negocio 2: un punto inactivo no recibe reportes ni entra en rutas nuevas
+    // Regla de negocio 2
     public boolean estaActivo() { return estado == EstadoPunto.ACTIVO; }
     public void desactivar() { this.estado = EstadoPunto.INACTIVO; }
     public void activar() { this.estado = EstadoPunto.ACTIVO; }

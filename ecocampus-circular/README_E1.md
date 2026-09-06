@@ -12,7 +12,7 @@ eco-puntos en el campus de la Universidad EIA.
 3. Ir a `src/main/java/co/eia/ecocampus/app/Main.java` y correrlo (▶️ al lado de `main`)
 
 **Desde terminal (sin Maven, con javac plano):**
-```bash
+```bas
 cd ecocampus-circular
 find src -name "*.java" > sources.txt
 javac -d out @sources.txt

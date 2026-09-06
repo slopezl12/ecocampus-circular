@@ -24,7 +24,7 @@ public abstract class Persona implements Identificable, Observador {
     public String getCorreo() { return correo; }
     public void setCorreo(String correo) { this.correo = correo; }
 
-    // Cada subtipo describe su propio rol -> polimorfismo (requisito 1)
+    // requisito 1
     public abstract String rolDescripcion();
 
     public void registrarEcoPuntos(RegistroEcoPuntos registro) {

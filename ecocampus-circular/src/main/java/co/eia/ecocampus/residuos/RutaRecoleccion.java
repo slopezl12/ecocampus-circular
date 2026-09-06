@@ -25,7 +25,7 @@ public class RutaRecoleccion implements Identificable, Asignable {
     public Operador getOperador() { return operador; }
     public EstadoRuta getEstado() { return estado; }
 
-    // Composicion: las paradas no existen sin la ruta
+    //las paradas no existen sin la ruta
     public void agregarParada(Parada parada) {
         if (numParadas >= paradas.length) {
             throw new IllegalStateException("Capacidad de paradas agotada en la ruta " + id);

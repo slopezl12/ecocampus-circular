@@ -6,10 +6,13 @@ eco-puntos en el campus de la Universidad EIA.
 
 ## Cómo importar y ejecutar
 
-**Desde IntelliJ:**
-1. `File → Open` y seleccionar la carpeta `ecocampus-circular` (IntelliJ detecta el `pom.xml` solo)
-2. Esperar a que sincronice el proyecto Maven
-3. Ir a `src/main/java/co/eia/ecocampus/app/Main.java` y correrlo (▶️ al lado de `main`)
+**Desde Eclipse IDE:**
+1. `File → Import...` → seleccionan **Maven → Existing Maven Projects** → `Next`
+2. En "Root Directory" hacé `Browse` y seleccioná la carpeta `ecocampus-circular` (la que tiene el `pom.xml`)
+3. Eclipse va a listar el proyecto detectado, dejalo marcado y dale `Finish`
+4. Esperá a que Eclipse (con el plugin m2e) resuelva el proyecto Maven
+5. Verificá el JDK: click derecho sobre el proyecto → `Properties → Java Build Path → Libraries`, confirmá que el JRE apunte a JDK 25 (si no, click derecho → `Properties → Java Compiler`, y ajustá el "Compiler compliance level" a 25)
+6. Para correrlo: click derecho sobre `Main.java` (en `src/main/java/co/eia/ecocampus/app`) → `Run As → Java Application`
 
 **Desde terminal (sin Maven, con javac plano):**
 ```bash
